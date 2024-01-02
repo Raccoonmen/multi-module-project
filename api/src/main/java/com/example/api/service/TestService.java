@@ -5,6 +5,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface TestService {
-    boolean toSaveData(TestInput parameter);
+    void toSaveData(TestInput parameter);
 
 }

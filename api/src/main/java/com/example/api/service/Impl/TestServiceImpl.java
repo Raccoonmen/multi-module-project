@@ -14,12 +14,10 @@ public class TestServiceImpl implements TestService {
     private final TestRepository testRepository;
 
     @Override
-    public boolean toSaveData(TestInput parameter) {
+    public void toSaveData(TestInput parameter) {
         Test test = new Test();
         test.setUserKey(parameter.getUser_key());
         test.setPassword(parameter.getPassword());
         testRepository.save(test);
-
-        return true;
     }
 }
